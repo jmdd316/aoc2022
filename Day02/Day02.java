@@ -28,9 +28,9 @@ public class Day02 {
         int result = choices[1].compareTo("X");
         //System.out.println(diffMod3);
         switch(result) {
-            case 0: score += Math.floorMod(otherChoice-1,3)+1; break;
-            case 1: score+= (otherChoice + 1)+3; break;
-            case 2: score+= Math.floorMod(otherChoice+1,3)+6+1; break;
+            case 0: score += Math.floorMod(otherChoice - 1,3)+1; break;
+            case 1: score += (otherChoice + 1)+3; break;
+            case 2: score += Math.floorMod(otherChoice + 1,3)+6+1; break;
         }
         return score;
     }
@@ -47,7 +47,7 @@ public class Day02 {
     }
 
     public static void part2() throws IOException{
-        Scanner in = new Scanner(new File("sample.txt"));
+        Scanner in = new Scanner(new File("input.txt"));
         int total = 0;
         while(in.hasNext()) {
             String line = in.nextLine();

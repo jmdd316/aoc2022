@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "Day03",
         "Day02",
         "Day01",
-        "Day03"
+        "Day04"
     ]
 }
